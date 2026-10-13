@@ -1,0 +1,55 @@
+/*
+    Sass
+
+    *what is Sass?
+        -Sass stands for Syntactically Awesome StyleSheet
+        -Sass is a (CSS preprocessor), which means it extends (CSS) with extra features
+        -(Browsers cannot read Sass directly. That's why Sass code must be (compiled) into standard (CSS) before being used on a website
+        -Sass is (100%) compatible with (CSS), so any valid (CSS) code is also valid Sass code
+        -Sass comes in two syntaxes:
+            >sass: most commo, similar to (CSS) but with extra features
+            >sass: indentation-based syntax (less common today)
+        -Official website: "https://www.sass-lang.com"
+
+    *why use Sass?
+        -Sass gives you features that don't exist in pure (CSS), such as:
+            >(Variables): store colors, fonts, sizes in one place
+            >(Nesting): write cleaner, more structured (CSS)
+            >(Mixins): reusable chunks of (CSS) code
+            >(Functions): create custom helpers
+            >(Control directives): @if, @for, @each, etc
+            >(Modules): organize and share code across files
+            >(Inheritance/Extend): share styles between selectors
+        -These features help you:
+            >Write less repetitive code
+            >Keep stylesheets organized and scalable
+            >Make large projects easier to maintain
+
+    *how to install Sass and compile it by command line?
+        -In the past, Sass was implemented in {Ruby (Ruby Sass)}, but it is now officially maintained in {Dart (Dart Sass)}, which is faster, easier to install, and the only supported version today
+        -There are multiple ways to install Sass, but the (official and recommended one today is (Dart Sass)
+        -Open (CMD) or (PowerShell and run:
+            >Gives (npm) the permission to manage our system:
+                Set-executionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+            >Verify (npm) installation:
+                npm --version
+            >Install Sass from (npm):
+                npm install -g sass
+            >Verify Sass installation:
+                sass --version
+
+    *how to compile Sass?
+        -Once Sass is installed, you can compile .sass files into .css:
+            >One-time compilation:
+                sass scss_path:css_path
+            >Watch mode (auto-compile on file save):
+                sass --watch scss_path:css_path
+.
+*/
+.box {
+  background-color: #09c;
+  width: 200px;
+  height: 200px;
+}
+
+/*# sourceMappingURL=index.css.map */
